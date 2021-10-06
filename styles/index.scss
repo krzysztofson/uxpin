@@ -1,26 +1,39 @@
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
 :root {
     --color-dark: #3F3F3F;
     --color-light: #FFF;
     --color-yellow: #FFE200;
     --color-gray: #A9A9A9;
+    --color-dark-gray: #707070;
 }
 
 $colorDark: var(--color-dark);
 $colorLight: var(--color-light);
 $colorYellow: var(--color-yellow);
 $colorGray: var(--color-gray);
+$colorDarkGray: var(--color-dark-gray);
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $colorDarkGray;
+}
 
 h1 {
     font-size: 48px;
     font-weight: 900;
 }
 
+h2 {
+    margin: 55px 0 38px;
+    font-size: 48px;
+}
+
 h3 {
     font-size: 12px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 1.5;
 }
 
 a {
@@ -162,7 +175,7 @@ a {
     }
 
     &__item {
-        max-width: 80px;
+        max-width: 60px;
         padding: 30px;
     }
 }
