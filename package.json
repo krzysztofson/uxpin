@@ -1,0 +1,22 @@
+{
+  "name": "uxpin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysztofson/uxpin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krzysztofson/uxpin/issues"
+  },
+  "homepage": "https://github.com/krzysztofson/uxpin#readme",
+  "dependencies": {
+    "buttercms": "^1.2.7"
+  }
+}
