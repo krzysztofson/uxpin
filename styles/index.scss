@@ -4,6 +4,7 @@
     --color-yellow: #FFE200;
     --color-gray: #A9A9A9;
     --color-dark-gray: #707070;
+    --color-blue: #3BA9FB;
 }
 
 $colorDark: var(--color-dark);
@@ -11,6 +12,7 @@ $colorLight: var(--color-light);
 $colorYellow: var(--color-yellow);
 $colorGray: var(--color-gray);
 $colorDarkGray: var(--color-dark-gray);
+$colorBlue: var(--color-blue);
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -177,5 +179,31 @@ a {
     &__item {
         max-width: 60px;
         padding: 30px;
+    }
+}
+
+.footer {
+    padding: 20px 0 22px;
+    margin-top: 80px;
+    background: $colorBlue;
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin-right: 40px;
+
+        a {
+            color: $colorLight;
+
+            &:hover {
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
     }
 }

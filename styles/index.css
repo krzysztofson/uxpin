@@ -4,6 +4,7 @@
   --color-yellow: #FFE200;
   --color-gray: #A9A9A9;
   --color-dark-gray: #707070;
+  --color-blue: #3BA9FB;
 }
 
 body {
@@ -196,5 +197,34 @@ a:hover {
 .logos__item {
   max-width: 60px;
   padding: 30px;
+}
+
+.footer {
+  padding: 20px 0 22px;
+  margin-top: 80px;
+  background: var(--color-blue);
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item {
+  margin-right: 40px;
+}
+
+.footer__item a {
+  color: var(--color-light);
+}
+
+.footer__item a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=index.css.map */
