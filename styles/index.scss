@@ -1,4 +1,57 @@
 body {
-    background: red;
     font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --color-dark: #3F3F3F;
+    --color-light: #fff;
+}
+
+$colorDark: var(--color-dark);
+$colorLight: var(--color-light);
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 900;
+    color: $colorLight;
+    background: transparent linear-gradient(90deg, #3BA9FB 0%, #148AF1 100%) 0% 0%;
+    box-shadow: 0px 2px 7px #00000033;
+    border-radius: 4px;
+
+    .navigation & {
+        margin-left: 30px;
+    }
+}
+
+.navigation {
+    &__wrapper {
+        padding: 12px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        display: block;
+        max-height: 26px;
+    }
+    
+    &__link {
+        margin-left: 35px;
+        color: $colorDark;
+        font-size: 16px;
+    }
 }
