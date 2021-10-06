@@ -6,15 +6,21 @@ body {
     --color-dark: #3F3F3F;
     --color-light: #FFF;
     --color-yellow: #FFE200;
+    --color-gray: #A9A9A9;
 }
 
 $colorDark: var(--color-dark);
 $colorLight: var(--color-light);
 $colorYellow: var(--color-yellow);
+$colorGray: var(--color-gray);
 
 h1 {
     font-size: 48px;
     font-weight: 900;
+}
+
+h3 {
+    font-size: 12px;
 }
 
 a {
@@ -65,6 +71,7 @@ a {
 .container {
     max-width: 1158px;
     padding: 0 24px;
+    margin: 0 auto;
 }
 
 .navigation {
@@ -138,5 +145,24 @@ a {
     &__heading {
         padding-bottom: 44px;
         color: $colorLight;
+    }
+}
+
+.logos {
+    padding: 60px 0 30px;
+    border-bottom: 1px solid $colorGray;
+    text-align: center;
+    color: $colorGray;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 80px;
+        padding: 30px;
     }
 }
