@@ -7,6 +7,15 @@
     --color-blue: #3BA9FB;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-dark: #FFF;
+        --color-light: #3F3F3F;
+        --color-gray: #A9A9A9;
+        --color-dark-gray: #aaaaaa;
+    }
+}
+
 $colorDark: var(--color-dark);
 $colorLight: var(--color-light);
 $colorYellow: var(--color-yellow);
