@@ -10,6 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--color-dark-gray);
+  background-color: var(--color-light);
 }
 
 h1 {
@@ -102,6 +103,43 @@ a:hover {
 
 .navigation .btn {
   margin-left: 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .dropdown {
+    display: block;
+  }
+}
+
+.dropdown > a::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 7px;
+  border-style: solid;
+  border-width: 7px 5px 0 5px;
+  border-color: var(--color-dark) transparent transparent transparent;
+}
+
+.dropdown:hover .dropdown__list,
+.dropdown .dropdown__list:hover .dropdown__list {
+  display: block;
+  position: absolute;
+  bottom: -210%;
+  left: 40%;
+  padding: 10px 20px;
+  background: var(--color-light);
+  -webkit-box-shadow: 0 0 10px var(--color-dark);
+          box-shadow: 0 0 10px var(--color-dark);
+}
+
+.dropdown__list {
+  display: none;
 }
 
 .container {
