@@ -1,0 +1,18 @@
+.logos {
+    padding: 60px 0 30px;
+    border-bottom: 1px solid $colorGray;
+    text-align: center;
+    color: $colorGray;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        max-width: 60px;
+        padding: 30px;
+    }
+}

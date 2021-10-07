@@ -69,6 +69,12 @@ a:hover {
   opacity: 0.8;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 24px;
+  margin: 0 auto;
+}
+
 .btn {
   padding: 10px 20px;
   font-size: 13px;
@@ -151,47 +157,34 @@ a:hover {
   display: none;
 }
 
-.container {
-  max-width: 1158px;
-  padding: 0 24px;
-  margin: 0 auto;
+.footer {
+  padding: 17px 0;
+  margin-top: 80px;
+  background: var(--color-blue);
 }
 
-.navigation__wrapper {
-  padding: 12px 15px;
+.footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
-.navigation__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.footer__item {
+  margin-right: 40px;
 }
 
-.navigation__logo {
-  display: block;
-  max-height: 26px;
+.footer__item a {
+  color: var(--color-light);
+  line-height: 1.75;
 }
 
-.navigation__link {
-  display: none;
-  margin-left: 35px;
-  color: var(--color-dark);
-  font-size: 16px;
-}
-
-@media (min-width: 768px) {
-  .navigation__link {
-    display: block;
-  }
+.footer__item a:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 .header {
@@ -284,33 +277,40 @@ a:hover {
   padding: 30px;
 }
 
-.footer {
-  padding: 17px 0;
-  margin-top: 80px;
-  background: var(--color-blue);
-}
-
-.footer__links {
+.navigation__wrapper {
+  padding: 12px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.footer__item {
-  margin-right: 40px;
+.navigation__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.footer__item a {
-  color: var(--color-light);
-  line-height: 1.75;
+.navigation__logo {
+  display: block;
+  max-height: 26px;
 }
 
-.footer__item a:hover {
-  opacity: 1;
-  text-decoration: underline;
+.navigation__link {
+  display: none;
+  margin-left: 35px;
+  color: var(--color-dark);
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .navigation__link {
+    display: block;
+  }
 }
 /*# sourceMappingURL=index.css.map */

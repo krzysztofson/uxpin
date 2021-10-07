@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $colorDarkGray;
+    background-color: $colorLight;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+
+    @include breakpoint($sm) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    margin: 55px 0 38px;
+    font-size: 25px;
+
+    @include breakpoint($sm) {
+        font-size: 48px;
+    }
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+
+    @include breakpoint($sm) {
+        font-size: 24px;
+    }
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
