@@ -14,19 +14,35 @@ $colorGray: var(--color-gray);
 $colorDarkGray: var(--color-dark-gray);
 $colorBlue: var(--color-blue);
 
+$sm: 768px;
+
+@mixin breakpoint($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: $colorDarkGray;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 900;
+
+    @include breakpoint($sm) {
+        font-size: 48px;
+    }
 }
 
 h2 {
     margin: 55px 0 38px;
-    font-size: 48px;
+    font-size: 25px;
+
+    @include breakpoint($sm) {
+        font-size: 48px;
+    }
 }
 
 h3 {
@@ -34,8 +50,12 @@ h3 {
 }
 
 p {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.5;
+
+    @include breakpoint($sm) {
+        font-size: 24px;
+    }
 }
 
 a {
@@ -68,10 +88,15 @@ a {
     }
 
     &--big {
-        font-size: 16px;
+        font-size: 14px;
         min-width: 200px;
-        padding: 15px 20px;
+        padding: 10px 15px;
         text-transform: uppercase;
+
+        @include breakpoint($sm) {
+            font-size: 16px;
+            padding: 15px 20px;
+        }
     }
 
     & + & {
@@ -107,9 +132,14 @@ a {
     }
     
     &__link {
+        display: none;
         margin-left: 35px;
         color: $colorDark;
         font-size: 16px;
+
+        @include breakpoint($sm) {
+            display: block;
+        }
     }
 }
 
@@ -154,7 +184,11 @@ a {
 
     &__content {
         max-width: 620px;
-        padding-bottom: 70px;
+        padding: 0 24px 70px;
+
+        @include breakpoint($sm) {
+            padding: 0 0 70px;
+        }
     }
 
     &__heading {
@@ -183,7 +217,7 @@ a {
 }
 
 .footer {
-    padding: 20px 0 22px;
+    padding: 17px 0;
     margin-top: 80px;
     background: $colorBlue;
 
@@ -199,6 +233,7 @@ a {
 
         a {
             color: $colorLight;
+            line-height: 1.75;
 
             &:hover {
                 opacity: 1;

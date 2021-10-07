@@ -13,13 +13,25 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 28px;
   font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 h2 {
   margin: 55px 0 38px;
-  font-size: 48px;
+  font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 48px;
+  }
 }
 
 h3 {
@@ -27,8 +39,14 @@ h3 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 24px;
+  }
 }
 
 a {
@@ -65,10 +83,17 @@ a:hover {
 }
 
 .btn--big {
-  font-size: 16px;
+  font-size: 14px;
   min-width: 200px;
-  padding: 15px 20px;
+  padding: 10px 15px;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .btn--big {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
 }
 
 .btn + .btn {
@@ -110,9 +135,16 @@ a:hover {
 }
 
 .navigation__link {
+  display: none;
   margin-left: 35px;
   color: var(--color-dark);
   font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .navigation__link {
+    display: block;
+  }
 }
 
 .header {
@@ -165,7 +197,13 @@ a:hover {
 
 .header__content {
   max-width: 620px;
-  padding-bottom: 70px;
+  padding: 0 24px 70px;
+}
+
+@media (min-width: 768px) {
+  .header__content {
+    padding: 0 0 70px;
+  }
 }
 
 .header__heading {
@@ -200,7 +238,7 @@ a:hover {
 }
 
 .footer {
-  padding: 20px 0 22px;
+  padding: 17px 0;
   margin-top: 80px;
   background: var(--color-blue);
 }
@@ -221,6 +259,7 @@ a:hover {
 
 .footer__item a {
   color: var(--color-light);
+  line-height: 1.75;
 }
 
 .footer__item a:hover {
